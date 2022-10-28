@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StateManagerExample</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Register Gender -->
+    <string name="register_gender_woman">Kadın</string>
+    <string name="register_gender_man">Erkek</string>
+    <string name="register_gender_title">Cinsiyetinizi</string>
+    <string name="register_gender_desc">seçin</string>
+    <string name="register_gender_answer_a_few_question">Doğru eşlemeyi bulmak için birkaç soruyu yanıtlayın.</string>
+    <string name="register_gender_already_registered">Zaten üye misiniz?</string>
+    <string name="register_gender_login">Giriş Yapın</string>
+    <string name="register_gender_privacy_and_terms">Giriş yaparak Gizlilik Sözleşmesini ve Kullanım Koşullarını kabul etmiş sayılırsınız.</string>
+
+</resources>

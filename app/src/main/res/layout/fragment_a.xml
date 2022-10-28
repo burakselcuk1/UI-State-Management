@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="aFragmentViewstate"
+            type="com.example.statemanagerexample.aFragment.AFragmentPageViewState" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:text="@string/register_gender_title"
+                    android:textColor="@color/register_title_color" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/gotham_book"
+                    android:gravity="center_horizontal"
+                    android:text="@string/register_gender_desc"
+                    android:textColor="@color/register_title_color" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardViewWoman"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        app:cardBackgroundColor="@{aFragmentViewstate.getGenderWomanBackgroundColor(context)}"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="24dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center_horizontal"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@{aFragmentViewstate.getGenderWomanIcon(context)}" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="24dp"
+                                android:fontFamily="@font/gotham_book"
+                                android:text="@string/register_gender_woman"
+                                android:textColor="@{aFragmentViewstate.getGenderWomanTextColor(context)}"/>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardViewMan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="0.5"
+                        app:cardBackgroundColor="@{aFragmentViewstate.getGenderManBackgroundColor(context)}"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="24dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center_horizontal"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@{aFragmentViewstate.getGenderManIcon(context)}" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="24dp"
+                                android:fontFamily="@font/gotham_book"
+                                android:text="@string/register_gender_man"
+                                android:textColor="@{aFragmentViewstate.getGenderManTextColor(context)}"
+                                />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </com.google.android.material.card.MaterialCardView>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

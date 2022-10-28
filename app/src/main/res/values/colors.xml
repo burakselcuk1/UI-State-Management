@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="register_indicator_selected_color">#5074f5</color>
+    <color name="register_indicator_unselected_color">#dbdbed</color>
+    <color name="register_title_color">#313154</color>
+    <color name="register_gender_login_color">#5074f5</color>
+    <color name="register_gender_unselected_color">#f5f5f5</color>
+    <color name="register_gender_selected_color_women">#CB36F4</color>
+
+    <color name="register_gender_selected_color">#5074f5</color>
+    <color name="register_age_unselected_color">#4D313154</color>
+    <color name="register_video_time_color">#9090bb</color>
+    <color name="register_photo_remove_color">#5074f5</color>
+</resources>
